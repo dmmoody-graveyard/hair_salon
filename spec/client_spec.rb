@@ -9,13 +9,6 @@ describe(Client) do
     end
   end
 
-  describe('#id') do
-    it('returns a client id') do
-      test_client = Client.new(:name => "Duane", :id => nil, :stylist_id => 1)
-      expect(test_client.id()).to(eq(nil))
-    end
-  end
-
   describe('#stylist_id') do
     it('returns a stylist id') do
       test_client = Client.new(:name => "Duane", :id => nil, :stylist_id => 1)
