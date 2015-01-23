@@ -4,7 +4,6 @@ class Client
 
   define_method(:initialize) do |attributes|
     @name = attributes.fetch(:name)
-    @id = attributes.fetch(:id)
     @stylist_id = attributes.fetch(:stylist_id)
   end
 
@@ -13,9 +12,8 @@ class Client
     clients = []
     returned_clients.each() do |client|
       name = client.fetch("name")
-      id = client.fetch("id").to_i()
       stylist_id = client.fetch("stylist_id").to_i()
-      clients.push(Client.new({:name => name, :id => id, :stylist_id => stylist_id}))
+      clients.push(Client.new({:name => name, :stylist_id => stylist_id}))
     end
     clients
   end
