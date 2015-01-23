@@ -50,8 +50,8 @@ CREATE DATABASE hair_salon_test WITH TEMPLATE hair_salon;
 Contribute
 ----------
 
-- Issue Tracker: github.com/dmmoody/hair_salon/issues
-- Source Code: github.com/dmmoody/hair_salon
+- Issue Tracker: https://github.com/dmmoody/hair_salon/issues
+- Source Code: https://github.com/dmmoody/hair_salon
 
 Support
 -------
@@ -59,13 +59,13 @@ Support
 If you are having issues, please let us know at: dmmoody@gmail.com
 
 Bug reports
-===========
+-----------
 
 If you discover any bugs, feel free to create an issue on GitHub. Please add as much information as possible to help us fixing the possible bug. We also encourage you to help even more by forking and sending us a pull request.
 
 https://github.com/dmmoody/hair_salon/issues
 
 License
-=======
+-------
 
 MIT License. Copyright 2014 Duane M. Moody | <a href="http://moodyco.de">MoodyCode</a>
