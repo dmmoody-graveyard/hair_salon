@@ -26,10 +26,10 @@ post("/clients") do
   client = Client.new({:name => name, :stylist_id => stylist_id})
   client.save()
   @stylist = Stylist.find(stylist_id)
-  erb(:client)
+  erb(:stylist)
 end
 
 get("/stylists/:id") do
   @stylist = Stylist.find(params.fetch("id").to_i())
-  erb(:client)
+  erb(:stylist)
 end
