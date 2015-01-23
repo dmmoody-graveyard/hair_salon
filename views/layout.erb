@@ -1,12 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Hair Salon</title>
+    <title>Moody Salon</title>
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="/css/my_style.css">
   </head>
   <body>
     <div class="container">
-      <%= yield %>
+        <h1>Moody Salons <small>Hair Stylists</small></h1>
+	    <nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			        <span class="sr-only">Toggle navigation</span>
+			      </button>
+			      <a class="navbar-brand" href="/">Home</small></a>
+			    </div>
+			</div>
+		</nav>
+		<div class="container">
+      		<%= yield %>
+      	</div>
     </div>
   </body>
 </html>

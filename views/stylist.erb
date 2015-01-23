@@ -1,24 +1,26 @@
-<h1>Add a Client for <%= @stylist.name() %> </h1>
-
-<form action="/clients" method="post">
-  <input id="stylist_id" name="stylist_id" type="hidden" value="<%= @stylist.id() %>">
-
-  <label for="name">Name of the Client:</label>
-  <input id="name" name="name" type="text">
-
-  <button type="submit">Add Client</button>
-</form>
-
 <% if @stylist.clients().any?() %>
-  <h3>Here are all the Clients for this Stylist:</h3>
-
-  <ul>
-    <% @stylist.clients().each() do |client| %>
-      <li><%= client.name() %></li>
-    <% end %>
-  </ul>
+  <p class="lead">Here are all the clients for <%= @stylist.name() %>:</p>
+  <div class="well well-sm">
+    <ul>
+      <% @stylist.clients().each() do |client| %>
+        <li class="list-unstyled"><span class="lead"><%= client.name() %></span></li>
+      <% end %>
+    </ul>
+  </div>
 <% else %>
-  <p>There are no Clients yet for this Stylist!</p>
+  <p class="lead yellow">There are no clients yet for this Stylist!</p>
 <% end %>
 
-<a href="/">Return to Main Page</a>
+<hr>
+<p class="lead">Add a client for <%= @stylist.name() %> </p>
+
+<form class="form-inline" action="/clients" method="post">
+  <input id="stylist_id" name="stylist_id" type="hidden" value="<%= @stylist.id() %>">
+
+  <label class="sr-only" for="name">Name of the Client:</label>
+  <input class="form-control" id="name" name="name" type="text" placeholder="Enter Client's Name">
+
+  <button type="submit" class="btn btn-default">Add Client</button>
+</form>
+<br>
+
