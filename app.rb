@@ -17,5 +17,5 @@ post("/stylists") do
   stylist = Stylist.new({:name => name, :id => nil})
   stylist.save()
   @stylists = Stylist.all()
-  erb(:index)
+  redirect('/')
 end

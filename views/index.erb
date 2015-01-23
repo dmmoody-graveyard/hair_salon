@@ -13,7 +13,7 @@
   <p>Click on a list to see its tasks:</p>
 
   <ul>
-    <% @stylists.each do |list| %>
+    <% @stylists.each do |stylist| %>
       <li><a href="/stylists/<%= stylist.id() %>"><%= stylist.name() %></a></li>
     <% end %>
   </ul>
