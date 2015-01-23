@@ -16,4 +16,9 @@ describe(Client) do
     end
   end
 
+  describe('.all') do
+    it('returns all clients') do
+      expect(Clients.all()).to(eq([]))
+    end
+
 end
