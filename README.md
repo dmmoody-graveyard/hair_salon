@@ -28,19 +28,19 @@ In your web browser, go to http://localhost:4567
 Database Setup
 ------------
 
-For PostgreSQL:
+With PostgreSQL, create the database:
 
 ``` sql
 CREATE DATABASE hair_salon;
 ```
 
-Once PostreSQL database is created, ```\c hair_salon;``` so that you are in the database and create the following tables:
+Once hair_salon database is created, change into the database with```\c hair_salon;``` and create the following tables:
 
 ``` sql
 CREATE TABLE stylists (id serial PRIMARY KEY, name VARCHAR);
 CREATE TABLE clients (id serial PRIMARY KEY, name VARCHAR, stylist_id INT);
 ```
-For the test database:
+To create the test database:
 
 ``` sql
 CREATE DATABASE hair_salon_test WITH TEMPLATE hair_salon;
