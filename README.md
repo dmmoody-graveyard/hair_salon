@@ -38,7 +38,7 @@ Once PostreSQL database is created, ```\c hair_salon;``` so that you are in the 
 
 ``` sql
 CREATE TABLE stylists (id serial PRIMARY KEY, name VARCHAR);
-CREATE TABLE clients (id serial PRIMARY KEY, name VARCHAR, stylists_id INT);
+CREATE TABLE clients (id serial PRIMARY KEY, name VARCHAR, stylist_id INT);
 ```
 For the test database:
 
